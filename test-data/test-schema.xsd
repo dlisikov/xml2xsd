@@ -1,0 +1,59 @@
+const xsdSchema = `<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="searchData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="occupation"/>
+              <xs:element type="xs:date" name="birthday"/>
+              <xs:element type="xs:string" name="educationType"/>
+              <xs:element type="xs:string" name="jobSituation"/>
+              <xs:element type="xs:byte" name="benefitAgeLimit"/>
+              <xs:element type="xs:short" name="benefitAmount"/>
+              <xs:element type="xs:byte" name="fractionOfficeWork"/>
+              <xs:element type="xs:string" name="industry"/>
+              <xs:element type="xs:byte" name="staffResponsibility"/>
+              <xs:element type="xs:string" name="familyStatus"/>
+              <xs:element type="xs:string" name="smoker"/>
+              <xs:element type="xs:string" name="adjustment"/>
+              <xs:element type="xs:string" name="excellentPerformance"/>
+              <xs:element type="xs:string" name="dynamicPremium"/>
+              <xs:element type="xs:string" name="b2BPartner"/>
+              <xs:element type="xs:string" name="b2BAdPartner"/>
+              <xs:element type="xs:string" name="sortedBy"/>
+              <xs:element type="xs:date" name="insuranceStart"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="insuredPerson">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="salutation"/>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element type="xs:date" name="birthday"/>
+              <xs:element type="xs:string" name="firstName"/>
+              <xs:element type="xs:string" name="lastName"/>
+              <xs:element type="xs:string" name="email"/>
+              <xs:element type="xs:int" name="phoneNumber"/>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="postalCode"/>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:byte" name="houseNumber"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="agreementToContactFromAdvisor"/>
+              <xs:element type="xs:int" name="userId"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>`;
+
+export default xsdSchema;

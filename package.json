@@ -1,0 +1,15 @@
+{
+  "name": "xml2xsd",
+  "version": "1.0.0",
+  "description": "a small package to convert xml to xsd",
+  "main": "index.js",
+  "repository": "https://github.com/dlisikov/xml2xsd.git",
+  "author": "Dmitri Lisikov <d.lisikov@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha src/**/*.spec.js"
+  },
+  "dependencies": {
+    "mocha": "^5.0.0"
+  }
+}
