@@ -1,6 +1,6 @@
 module.exports = {
-  header: '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">',
-  footer: '</xs:schema>',
+  header: '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="root"><xs:complexType><xs:sequence>',
+  footer: '</xs:sequence></xs:complexType></xs:element></xs:schema>',
   selfClosedElementFormat: '<xs:element name="[ELEMENT_NAME]" type="xs:[ELEMENT_TYPE]"/>',
   complexElementStartFormat: '<xs:element name="[ELEMENT_NAME]"><xs:complexType><xs:sequence>',
   complexElementEndFormat: '</xs:sequence></xs:complexType></xs:element>',
